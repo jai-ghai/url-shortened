@@ -1,20 +1,15 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/api/shorten",
-      "dest": "server.js"
-    },
-    {
-      "src": "/api/analytics",
-      "dest": "server.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "server.js"
-    }
-  ],
-  "env": {
-    "MONGODB_URI": "mongodb+srv://jaighai8:oIYf4LcH86FAUxJe@cuvette.jhlei9d.mongodb.net/url"
-  }
+   "version": 2,
+   "builds": [
+       {
+           "src": "server.js",
+           "use": "@vercel/node"
+       }
+   ],
+   "routes": [
+       {
+           "src": "/(.*)",
+           "dest": "/server.js"
+       }
+   ]
 }
