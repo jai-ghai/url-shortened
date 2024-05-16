@@ -1,5 +1,5 @@
 import axios from "axios";
-export const BASE_URL = "http://localhost:8000/v1";
+export const BASE_URL = "https://url-shortened-ten.vercel.app/v1";
 
 export const generateShortUrl = async (originalUrl) => {
   try {
