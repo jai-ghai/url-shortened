@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 // Enable CORS middleware
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    origin: "https://link-shortened.netlify.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
